@@ -1,0 +1,20 @@
+{
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "description": "Your app description",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "engines": {
+      "node": "14.x"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
+  
