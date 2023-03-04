@@ -5,8 +5,6 @@ const url = require('url')
 const replaceTemplate = require('./modules/replaceTemplate')
 
 
-
-
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8')
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8')
 const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, 'utf-8')
@@ -55,26 +53,3 @@ server.listen(8000, '127.0.0.1', () => {
     console.log('Listening to requests on port 8000')
 })
 
-
-
-
-///////////////////////////////////////////////////////////////////////////////////
-
-///   FILES   /// 
-
-// Blocking Synchronous way 
-
-// const textIn = fs.readFileSync('input.txt', 'utf-8')
-// console.log(textIn)
-// /////////////////////////////////////////////////////////
-// const textOut =  `This is what we know about avocado : ${textIn}. \n Created on ${Date.now()} `
-
-// fs.writeFileSync('output2.txt', textOut)
-// console.log('File written !! ')
-// ////////////////////////////////////////////////////////
-
-// // Non - blocking asynchronous way
-
-// fs.readFile('start.txt', 'utf-8', (err, data) => {
-//     console.log(data)
-// })
